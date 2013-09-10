@@ -13,9 +13,8 @@ Tools in Use
 * Ruby 2.0.0 (binary RVM install)
 * Bundler
 * Rails 4.0
-* SQLite3, MySQL, and Postgres
+* SQLite3, MySQL, Postgres, and MongoDB
 * System dependencies for nokogiri, sqlite3, mysql, mysql2, and pg
 * Databases and users needed to run the Active Record test suite
 * Node.js for the asset pipeline
 * Memcached
-* MongoDB
