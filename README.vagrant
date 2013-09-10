@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #################################################################
 # A Virtual Machine for Ruby on Rails Core Development
 #################################################################
@@ -88,9 +87,3 @@ Finally, to completely wipe the virtual machine from the disk **destroying all i
     host $ vagrant destroy # DANGER: all is gone
 
 Please check the [Vagrant documentation](http://vagrantup.com/v1/docs/index.html) for more information on Vagrant.
-=======
-Backend
-=======
-
-This is the backend content creation tool. 
->>>>>>> 21d4f26bb0b1dd17264d8fb311e1662112653b41
