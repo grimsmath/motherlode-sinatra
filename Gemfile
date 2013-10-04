@@ -47,3 +47,6 @@ gem 'dotenv-rails'
 
 # Use SASS port of bootstrap
 gem 'bootstrap-sass'
+
+# Use SimpleForm for more concise form views
+gem 'simple_form'
