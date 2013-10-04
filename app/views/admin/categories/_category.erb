@@ -1,0 +1,13 @@
+<%= simple_form_for([:admin, @category]) do |f| %>
+    <%= f.error_notification %>
+
+    <div class="form-inputs">
+      <%= f.input :name %>
+      <%= f.association :parent, collection: Category.all %>
+      <!--Caution with associations and mongoid-->
+    </div>
+
+    <div class="form-actions">
+      <%= f.button :submit %>
+    </div>
+<% end %>

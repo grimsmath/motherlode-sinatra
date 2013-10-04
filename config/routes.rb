@@ -1,6 +1,5 @@
 Motherlode::Application.routes.draw do
   resources :nuggets
-  resources :categories
   resources :users
   resources :sessions
 
@@ -13,7 +12,9 @@ Motherlode::Application.routes.draw do
     resources :users
   end
 
-  root 'users#index'
+  get 'categories(/:selected_category)' => 'categories#show'
+
+  root 'categories#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

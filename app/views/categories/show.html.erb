@@ -1,14 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @category.name %>
-</p>
+<h1><%= @category %></h1>
 
-<p>
-  <strong>Parent:</strong>
-  <%= @category.parent %>
-</p>
+<ul>
+  <% @children.each do |category| %>
+      <li><a href="/categories/<%= category._id %>"><%= category %></a></li>
+  <% end %>
+</ul>
 
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+<h2>Nuggets</h2>
+
+<ul>
+  <% @nuggets.each do |nugget| %>
+      <li><a href="/categories/<%= nugget._id %>"><%= nugget.title %></a></li>
+  <% end %>
+</ul>
