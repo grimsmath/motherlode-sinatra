@@ -3,6 +3,7 @@ class User
   include ActiveModel::SecurePassword
 
   has_and_belongs_to_many :categories
+  has_many :nuggets
 
   field :username, type: String
   field :password_digest, type: String
@@ -14,5 +15,9 @@ class User
 
   def to_s
     name
+  end
+
+  def is_admin?
+    true
   end
 end

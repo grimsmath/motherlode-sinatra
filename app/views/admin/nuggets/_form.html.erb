@@ -1,0 +1,16 @@
+<%= simple_form_for(@nugget) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :title %>
+
+    <%= f.association :category, collection: Category.all %>
+    <%= f.association :author, collection: User.all %>
+    <!--Caution with associations and mongoid-->
+    <%= f.input :content %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

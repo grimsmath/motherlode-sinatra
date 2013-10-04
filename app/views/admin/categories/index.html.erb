@@ -1,0 +1,24 @@
+<h1>Global Category Listing</h1>
+
+<%
+   #Inappropriate rendering helper
+  def render_category (category)
+    output = '<li>'
+    output << link_to(category.name, [:admin, category])
+    category.children.each do |child|
+      output << '<ul>'
+      output << render_category(child)
+      output << '</ul>'
+    end
+    output << '</li>'
+    return output
+  end
+%>
+
+<ul>
+  <% @categories.where(parent: nil).each do |category| %>
+    <%= render_category(category).html_safe %>
+  <% end %>
+</ul>
+
+<%= link_to 'New Category', new_category_path %>

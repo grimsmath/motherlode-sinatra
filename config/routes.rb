@@ -1,13 +1,17 @@
 Motherlode::Application.routes.draw do
   resources :nuggets
-
   resources :categories
-
   resources :users
   resources :sessions
 
   get 'login' => 'sessions#new'
   get 'logout' => 'sessions#destroy'
+
+  namespace :admin do
+    resources :nuggets
+    resources :categories
+    resources :users
+  end
 
   root 'users#index'
 
