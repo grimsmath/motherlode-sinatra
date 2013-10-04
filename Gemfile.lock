@@ -8,6 +8,13 @@ GIT
       origin (~> 1.0)
       tzinfo (~> 0.3.37)
 
+GIT
+  remote: git://github.com/thomas-mcdonald/bootstrap-sass.git
+  revision: c0e12a90ba3e44ab68d3f153411fba3edc400b2a
+  specs:
+    bootstrap-sass (3.0.0.0)
+      sass (~> 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -38,8 +45,6 @@ GEM
     arel (4.0.0)
     atomic (1.1.14)
     bcrypt-ruby (3.0.1)
-    bootstrap-sass (2.3.2.2)
-      sass (~> 3.2)
     bson (2.0.0.rc2)
     bson_ext (1.5.1)
     builder (3.1.4)
@@ -147,7 +152,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
-  bootstrap-sass
+  bootstrap-sass!
   bson_ext
   coffee-rails (~> 4.0.0)
   debugger
