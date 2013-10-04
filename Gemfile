@@ -41,3 +41,6 @@ gem 'mongoid', github: 'mongoid/mongoid'
 
 # Use native C bson parsing for better mongo performance
 gem 'bson_ext'
+
+# Use dotenv for setting environmental variables on execution
+gem 'dotenv-rails'
