@@ -35,3 +35,9 @@ gem 'thin'
 
 # Use debugger
 gem 'debugger', group: [:development, :test]
+
+# Use mongoid ORM
+gem 'mongoid', github: 'mongoid/mongoid'
+
+# Use native C bson parsing for better mongo performance
+gem 'bson_ext'
