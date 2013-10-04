@@ -44,3 +44,6 @@ gem 'bson_ext'
 
 # Use dotenv for setting environmental variables on execution
 gem 'dotenv-rails'
+
+# Use SASS port of bootstrap
+gem 'bootstrap-sass'
