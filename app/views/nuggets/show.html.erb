@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @nugget.title %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @nugget.category %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @nugget.author %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @nugget.content %>
+</p>
+
+<%= link_to 'Edit', edit_nugget_path(@nugget) %> |
+<%= link_to 'Back', nuggets_path %>

@@ -1,4 +1,6 @@
 Motherlode::Application.routes.draw do
+  resources :nuggets
+
   resources :categories
 
   resources :users

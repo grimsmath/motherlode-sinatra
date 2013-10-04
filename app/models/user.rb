@@ -11,4 +11,8 @@ class User
   field :bio, type: String
 
   has_secure_password
+
+  def to_s
+    name
+  end
 end
