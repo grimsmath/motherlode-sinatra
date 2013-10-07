@@ -20,8 +20,8 @@
         <td><%= nugget.title %></td>
         <td><%= nugget.category %></td>
         <td><%= nugget.author %></td>
-        <td><%= link_to 'Show', nugget %></td>
-        <td><%= link_to 'Edit', edit_nugget_path(nugget) %></td>
+        <td><%= link_to 'Show', [:admin, nugget] %></td>
+        <td><%= link_to 'Edit', edit_admin_nugget_path(nugget) %></td>
         <td><%= link_to 'Destroy', nugget, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

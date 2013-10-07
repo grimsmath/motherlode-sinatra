@@ -4,7 +4,8 @@ class Category
   has_many :children, class_name: 'Category'
   belongs_to :parent, class_name: 'Category'
 
-  has_and_belongs_to_many :users, inverse_of: nil # Prevents storing category refs in User model
+  has_and_belongs_to_many :coordinators
+  has_and_belongs_to_many :admins
 
   field :name, type: String
 
