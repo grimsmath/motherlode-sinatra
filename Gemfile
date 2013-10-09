@@ -51,5 +51,8 @@ gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass'
 # Use SimpleForm for more concise form views
 gem 'simple_form'
 
+# Improve deployment on heroku
+gem 'rails_12factor'
+
 # Declare ruby version
 ruby '2.0.0'
