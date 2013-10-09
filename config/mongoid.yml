@@ -6,3 +6,7 @@ testing:
   sessions:
     default:
       uri: <%= ENV['MONGOLAB_TEST_URL'] %>
+production:
+  sessions:
+    default:
+      uri: mongodb://app:xCA3mX5x5KPdYZN@ds047468.mongolab.com:47468/motherlode_development
