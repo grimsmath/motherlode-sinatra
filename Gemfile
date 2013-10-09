@@ -50,3 +50,6 @@ gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass'
 
 # Use SimpleForm for more concise form views
 gem 'simple_form'
+
+# Declare ruby version
+ruby '2.0.0'
