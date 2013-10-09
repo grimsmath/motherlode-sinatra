@@ -2,25 +2,6 @@
 
 <h1><%= @category %></h1>
 
-Immediate Admins:  
-<ul>
-  <% @category.admins.each do |admin| %>
-    <li><%= admin.username %></li>
-  <% end %>
-</ul>
-Primary Admins:
-<ul>
-  <% @category.primary_admins.each do |admin| %>
-    <li><%= admin.username %></li>
-  <% end %>
-</ul>
-All Admins:
-<ul>
-  <% @category.all_admins.each do |admin| %>
-    <li><%= admin.username %></li>
-  <% end %>
-</ul>
-
 <ul>
   <% @children.each do |category| %>
       <li><a href="/categories/<%= category._id %>"><%= category %></a></li>

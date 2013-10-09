@@ -14,7 +14,7 @@ Motherlode::Application.routes.draw do
 
   get 'categories(/:selected_category)' => 'categories#show'
 
-  root 'categories#index'
+  root 'categories#show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
