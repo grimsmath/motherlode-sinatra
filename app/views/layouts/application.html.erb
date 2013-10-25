@@ -2,27 +2,25 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= content_for?(:title) ? yield(:title) : "Motherlode" %></title>
+  <title><%= content_for?(:title) ? yield(:title) : "First Coast Green Map" %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class="navbar navbar-inverse static" role="navigation">
-  <%= render 'layouts/navigation' %>
-</nav>
+<%= render 'layouts/newnavigation' %>
 
-<div class="container">
-<div class="content">
-  <div class="row">
-    <div class="span12">
-      <%= render 'layouts/messages' %>
-      <%= yield %>
+<div class="container" style="margin-top: 70px;">
+    <div class="content">
+      <div class="row">
+        <div class="span12">
+          <%= render 'layouts/messages' %>
+          <%= yield %>
+        </div>
+      </div>
+      <footer>
+      </footer>
     </div>
-  </div>
-  <footer>
-  </footer>
-</div>
 </div>
 
 </body>

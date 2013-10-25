@@ -1,0 +1,44 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 style="margin-top: 0">Edit Nugget</h3>
+    <p>From here you can make changes to the selected nugget</p>
+  </div>
+  <div class="panel-body">
+    <form role="form" class="form-horizontal">
+      <div class="form-group">
+        <label for="NuggetTitle" class="col-lg-2 control-label">Title:</label>
+        <div class="col-lg-10">
+          <input type="text" class="form-control" id="NuggetTitle" placeholder="Enter the title here">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="NuggetCategory" class="col-lg-2 control-label">Category:</label>
+        <div class="col-lg-10">
+          <select class="form-control" id="NuggetCategory">
+            <option value="">Please select...</option>
+            <option value="1">First Coast Green Map</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="NuggetAuthor" class="col-lg-2 control-label">Author:</label>
+        <div class="col-lg-10">
+          <select class="form-control" id="NuggetAuthor">
+            <option value="">Please select...</option>
+            <option value="1">First Coast Green Map</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="NuggetContent" class="col-lg-2 control-label">Content:</label>
+        <div class="col-lg-10">
+          <div id="NuggetContent" class="editor"></div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="panel-footer">
+    <button class="btn btn-primary">Save Changes</button>
+    <button class="btn btn-link">Cancel</button>
+  </div>
+</div>

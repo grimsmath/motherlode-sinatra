@@ -1,0 +1,42 @@
+<style type="text/css">
+    body {
+        background: #b6ddb5;
+    }
+
+    .content-bg {
+        border-radius: 5px;
+        background: rgba(255,255,255,.3);
+        box-shadow: 0px 0px 15px #777;
+    }
+</style>
+
+<div class="container content-bg">
+  <div class="row" style="margin-top: 20px;">
+    <div class="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Public</div>
+        <div class="list-group">
+          <a href="#" class="list-group-item">Welcome<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+          <a href="#counties" class="list-group-item">Counties<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+          <a href="#categories" class="list-group-item">Categories<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+      </div>
+      <div class="panel panel-danger">
+        <div class="panel-heading">Content Management</div>
+        <div class="list-group">
+          <a href="#nuggets" class="list-group-item">My Nuggets<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+          <a href="#profile" class="list-group-item">My Profile<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div id="backbone-container">Loading...</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function() {
+      new Motherlode();
+  })
+</script>

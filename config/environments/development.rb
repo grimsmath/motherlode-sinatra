@@ -19,6 +19,11 @@ Motherlode::Application.configure do
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
+  # Add the fonts path
+  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+
+  # Precompile additional assets
+  config.assets.precompile += %w( .svg .eot .woff .ttf )
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
