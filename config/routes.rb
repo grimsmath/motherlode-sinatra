@@ -1,7 +1,8 @@
 Motherlode::Application.routes.draw do
-  resources :nuggets
-  resources :users
-  resources :sessions
+  resources :nuggets, path: 'n', defaults: { :format => 'json' }
+  resources :users, path: 'u', defaults: { :format => 'json' }
+  resources :categories, path: 'c', defaults: { :format => 'json' }
+  resources :sessions, path: 's', defaults: { :format => 'json' }
 
   get 'login' => 'sessions#new'
   get 'logout' => 'sessions#destroy'

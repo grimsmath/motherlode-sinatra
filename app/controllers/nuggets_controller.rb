@@ -1,62 +1,44 @@
 class NuggetsController < ApplicationController
   before_action :set_nugget, only: [:show, :edit, :update, :destroy]
 
-  # GET /nuggets
-  # GET /nuggets.json
+  # GET /n
   def index
-    @nuggets = Nugget.all
+    # Add proper pagination
+    @nuggets = Nugget.all.skip(params['skip'] || 0).limit(params['limit'] || 20)
   end
 
-  # GET /nuggets/1
-  # GET /nuggets/1.json
+  # GET /n/1
   def show
   end
 
-  # GET /nuggets/new
-  def new
-    @nugget = Nugget.new
-  end
-
-  # GET /nuggets/1/edit
-  def edit
-  end
-
-  # POST /nuggets
-  # POST /nuggets.json
+  # POST /n
   def create
     @nugget = Nugget.new(nugget_params)
 
     respond_to do |format|
       if @nugget.save
-        format.html { redirect_to @nugget, notice: 'Nugget was successfully created.' }
         format.json { render action: 'show', status: :created, location: @nugget }
       else
-        format.html { render action: 'new' }
         format.json { render json: @nugget.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # PATCH/PUT /nuggets/1
-  # PATCH/PUT /nuggets/1.json
+  # PATCH/PUT /n/1
   def update
     respond_to do |format|
       if @nugget.update(nugget_params)
-        format.html { redirect_to @nugget, notice: 'Nugget was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: 'edit' }
         format.json { render json: @nugget.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # DELETE /nuggets/1
-  # DELETE /nuggets/1.json
+  # DELETE /n/1
   def destroy
     @nugget.destroy
     respond_to do |format|
-      format.html { redirect_to nuggets_url }
       format.json { head :no_content }
     end
   end
