@@ -3,8 +3,8 @@ class NuggetsController < ApplicationController
 
   # GET /n
   def index
-    # Add proper pagination
-    render json: Nugget.all.skip(params['skip'] || 0).limit(params['limit'] || 20)
+    # Add proper pagination and geolocation
+    render json: Nugget.all.skip(params['skip'] || 0).limit(params['limit'] || 20).geo_near([params['lon'] || 33, params['lat'] || 33]).spherical
   end
 
   # GET /n/1
