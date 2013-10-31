@@ -1,10 +1,16 @@
 class NuggetsController < ApplicationController
-  #before_action :set_nugget, only: [:show, :edit, :update, :destroy]
-
   # GET /n
   def index
-    # Add proper pagination and geolocation
-    render json: Nugget.all.skip(params['skip'] || 0).limit(params['limit'] || 20).geo_near([params['lon'] || 33, params['lat'] || 33]).spherical
+    skip = nugget_params[:skip] || 0
+    limit = nugget_params[:limit] || 20
+    radius = nugget_params[:radius] || 1000
+    longitude = nugget_params[:longitude] || 81.5097
+    latitude = nugget_params[:latitude] || 30.2619
+    coordinates = [longitude, latitude]
+
+    near_nuggets = Nugget.all.geo_near(coordinates).spherical.where(geo_near_distance: radius)
+
+    render json: near_nuggets
   end
 
   # GET /n/1
@@ -50,6 +56,6 @@ class NuggetsController < ApplicationController
   private
     # Never trust parameters from the scary internet, only allow the white list through.
     def nugget_params
-      params.permit(:title, :category_id, :author_id, :content)
+      params.permit(:title, :category_id, :category_slug, :author_id, :content, :longitude, :latitude, :radius)
     end
 end
