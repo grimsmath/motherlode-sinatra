@@ -2,11 +2,17 @@ development:
   sessions:
     default:
       uri: <%= ENV['MONGOLAB_DEVELOPMENT_URL'] %>
+  options:
+    raise_not_found_error: false
 testing:
   sessions:
     default:
       uri: <%= ENV['MONGOLAB_TEST_URL'] %>
+  options:
+    raise_not_found_error: false
 production:
   sessions:
     default:
       uri: mongodb://app:xCA3mX5x5KPdYZN@ds047468.mongolab.com:47468/motherlode_development
+  options:
+    raise_not_found_error: false

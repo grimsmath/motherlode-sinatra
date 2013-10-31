@@ -1,56 +1,55 @@
 class NuggetsController < ApplicationController
-  before_action :set_nugget, only: [:show, :edit, :update, :destroy]
+  #before_action :set_nugget, only: [:show, :edit, :update, :destroy]
 
   # GET /n
   def index
     # Add proper pagination
-    @nuggets = Nugget.all.skip(params['skip'] || 0).limit(params['limit'] || 20)
+    render json: Nugget.all.skip(params['skip'] || 0).limit(params['limit'] || 20)
   end
 
   # GET /n/1
   def show
+    if nugget =  Nugget.find(params[:id])
+      render json: nugget
+    else
+      render json: nil, status: :not_found
+    end
   end
 
   # POST /n
   def create
-    @nugget = Nugget.new(nugget_params)
+    nugget = Nugget.new nugget_params
 
-    respond_to do |format|
-      if @nugget.save
-        format.json { render action: 'show', status: :created, location: @nugget }
-      else
-        format.json { render json: @nugget.errors, status: :unprocessable_entity }
-      end
+    if nugget.save
+      render json: nugget, status: :created, location: nugget
+    else
+      render json: nugget.errors, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /n/1
   def update
-    respond_to do |format|
-      if @nugget.update(nugget_params)
-        format.json { head :no_content }
-      else
-        format.json { render json: @nugget.errors, status: :unprocessable_entity }
-      end
+    nugget = Nugget.find(params[:id])
+
+    if nugget.update nugget_params
+      render json: nugget
+    else
+      render json: nugget.errors, status: :unprocessable_entity
     end
   end
 
   # DELETE /n/1
   def destroy
-    @nugget.destroy
-    respond_to do |format|
-      format.json { head :no_content }
+    nugget = Nugget.find(params[:id])
+
+    if nugget.destroy
+      render json: nil
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_nugget
-      @nugget = Nugget.find(params[:id])
-    end
-
     # Never trust parameters from the scary internet, only allow the white list through.
     def nugget_params
-      params.require(:nugget).permit(:title, :category_id, :author_id, :content)
+      params.permit(:title, :category_id, :author_id, :content)
     end
 end
