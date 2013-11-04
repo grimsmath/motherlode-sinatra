@@ -8,7 +8,7 @@ class NuggetsController < ApplicationController
     latitude = nugget_params[:latitude] || 30.2619
     coordinates = [longitude, latitude]
 
-    near_nuggets = Nugget.all.geo_near(coordinates).spherical.where(geo_near_distance: radius)
+    near_nuggets = Nugget.all.geo_near(coordinates).spherical
 
     render json: near_nuggets
   end
