@@ -1,6 +1,8 @@
 ruby '2.0.0'
-source 'https://rubygems.org'
+# source 'https://rubygems.org'
+source 'http://rubygems.org'
 
+gem 'rake'
 gem 'sinatra'
 gem 'thin'
 gem 'mongo'
