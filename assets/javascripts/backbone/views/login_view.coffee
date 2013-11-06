@@ -1,5 +1,5 @@
 Motherlode.Views.LoginView = Backbone.View.extend
-  template: JST["backbone/templates/auth/login"]
+  template: JST["backbone/templates/user/login"]
   el: "#backbone-container"
 
   initialize: ->

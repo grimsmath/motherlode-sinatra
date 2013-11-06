@@ -16,6 +16,7 @@ configure do
   # MongoClient's from_uri method requires ENV['MONGODB_URI'] to be set
   # You may set in RACK_ENV or using foreman during development
   mongo_client = Mongo::MongoClient.from_uri
+
   # TODO: Extract DB name and configuration from ENV
   mongo_db = mongo_client.db('sinatraslode', pool_size: 5, timeout: 2)
 
