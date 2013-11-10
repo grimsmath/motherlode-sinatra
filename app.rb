@@ -186,7 +186,7 @@ end
 
 # Index of all nuggets
 get '/n' do
-  halt 401 unless user_is_admin?
+  #halt 401 unless user_is_admin?
   settings.nuggets_coll.find.to_json
 end
 
