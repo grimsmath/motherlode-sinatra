@@ -199,11 +199,11 @@ post '/n' do
       title: params[:title],
       category: BSON::ObjectId(params[:category]),
       content: params[:content],
-      author: BSON::ObjectId(params[:users]),
+      author: current_user ? BSON::ObjectId(current_user) : nil,
       published: false
   }
   # TODO: Add error trapping
-  settings.nuggets_coll.insert(nugget_doc)
+  settings.nuggets_coll.insert(nugget_doc).to_json
 end
 
 # Retrieve nugget
