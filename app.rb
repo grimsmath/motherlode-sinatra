@@ -22,7 +22,7 @@ configure do
   set :mongo_client, mongo_client
   set :mongo_db, mongo_db
   set :nuggets_coll, mongo_db['nuggets']
-  set :categories_coll, mongo_db['taxonomy']
+  set :categories_coll, mongo_db['categories']
   set :users_coll, mongo_db['users']
 end
 
