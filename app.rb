@@ -101,7 +101,7 @@ end
 # Retrieve users profile
 get '/u/:id' do
   halt 401 unless user_is_admin? # TODO: OR Current User
-  settings.users_coll.find_one({'_id' => params[:id]},{:fields => {"password_token" => 0}}).to_json
+  settings.users_coll.find_one({'_id' =>  BSON::ObjectId(params[:id])},{:fields => {"password_token" => 0}}).to_json
 end
 
 # Update users profile
@@ -113,7 +113,7 @@ put '/u/:id' do
       name: params[:name],
       email: params[:email]
   }
-  settings.users_coll.update({'_id' => params[:id]}, user_doc).to_json
+  settings.users_coll.update({'_id' =>  BSON::ObjectId(params[:id])}, user_doc).to_json
 end
 
 # Delete users account
