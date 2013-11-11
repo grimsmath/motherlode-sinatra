@@ -3,67 +3,19 @@ Motherlode.Views.NuggetListView = Backbone.View.extend
   el: "#backbone-container"
 
   events:
-    "click .addNugget"      : "addNugget"
-    "click .editNugget"     : "editNugget"
-    "click .delNugget"      : "delNugget"
+    "click .add"    : "add"
 
   initialize: ->
     @render()
-    @view = new Motherlode.Views.ModeratedListView()
-    @$el.find('#nuggets-grid-container').html @view.render().el
-
-  addNugget: ->
-    console.log "addNugget not implemented yet"
-
-  editNugget: ->
-    console.log "editNugget not implemented yet"
-
-  delNugget: ->
-    console.log "delNugget not implemented yet"
-
-  render: ->
-    @$el.html @template()
-    @
-
-Motherlode.Views.ModeratedListView = Backbone.View.extend
-  template: JST["backbone/templates/nuggets/moderated"]
-  el: "#nuggets-grid-container"
-  tagName: "div"
-
-  initialize: ->
     @collection = new Motherlode.Collections.Nuggets()
-    @collection.on('add', @addOne, @)
-    @collection.on('reset', @render, @)
     @collection.reset()
-    @render()
-    @addAll()
-
-  addAll: ->
     @collection.fetch()
-
-  addOne: (entry) ->
-    @view = new Motherlode.Views.NuggetEntryView({model: entry})
+    @view = new Motherlode.Views.NuggetEntryView({model: @collection})
     @$el.find('tbody').html @view.render().el
 
-  render: ->
-    @$el.html @template()
-    @
-
-Motherlode.Views.UnmoderatedListView = Backbone.View.extend
-  template: JST["backbone/templates/nuggets/unmoderated"]
-  el: "#nuggets-grid-container"
-  tagName: "div"
-
-  events:
-    "click .selNugget" : "selNugget"
-
-  initialize: ->
-    @render()
-
-  selNugget: ->
-    console.log @view
-    console.log @view.closest('tr').html()
-    @$el.closest('tr').css("background-color", "yellow")
+  add: ->
+    console.log "addNugget called"
+    @AddView = new Motherlode.Views.NuggetEditView()
 
   render: ->
     @$el.html @template()
@@ -72,6 +24,18 @@ Motherlode.Views.UnmoderatedListView = Backbone.View.extend
 Motherlode.Views.NuggetEntryView = Backbone.View.extend
   template: JST["backbone/templates/nuggets/entry"]
   tagName: "tr"
+
+  events:
+    "click .edit"   : "edit"
+    "click .delete" : "delete"
+
+  edit: ->
+    @
+
+  delete: ->
+    @model.destroy()
+    this.remove()
+    return false
 
   render: ->
     @$el.html(@template(@model.toJSON()))
