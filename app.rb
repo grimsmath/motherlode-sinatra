@@ -130,7 +130,7 @@ post '/c' do
   category_doc = {
       title: params[:title],
       slug: create_slug(params[:title]),
-      parent: BSON::ObjectId(params[:parent])
+      parent: params[:parent].nil? ? nil : BSON::ObjectId(params[:parent])
   }
   # TODO: Add error trapping
   settings.categories_coll.insert(category_doc).to_json
