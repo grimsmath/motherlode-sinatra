@@ -1,6 +1,6 @@
 Motherlode.Models.User = Backbone.Model.extend
   paramRoot: "user"
-  url: "/u"
+  url: "/u/:id"
   idAttribute: "_id"
   defaults:
     _id: null

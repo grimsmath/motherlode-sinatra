@@ -53,12 +53,6 @@ Motherlode.Views.UserEditView = Backbone.View.extend
   initialize: ->
     @render()
 
-  save: ->
-    console.log "save is not implemented yet"
-
-  cancel: ->
-    window.history.back()
-
   render: ->
     @$el.html @template(@model.toJSON())
     @

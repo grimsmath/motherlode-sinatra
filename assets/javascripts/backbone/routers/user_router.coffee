@@ -16,8 +16,8 @@ Motherlode.Routers.UserRouter = Backbone.Router.extend
       @initCollections()
 
   initCollections: ->
-    @users.reset()
-    @users.fetch()
+#    @users.reset()
+#    @users.fetch()
 
   showProfile: ->
     console.log "showProfile is not implemented yet"
@@ -40,6 +40,7 @@ Motherlode.Routers.UserRouter = Backbone.Router.extend
 
   showUser: (id) ->
     console.log "showUser called"
+    console.log @users.models
     user = @users.get(id)
     console.log user
     @view = new Motherlode.Views.UserShowView({model: user})
