@@ -85,7 +85,8 @@ post '/u' do
   user_doc = {
       username: params[:username],
       password_token: BCrypt::Password.create(params[:password]),
-      name: params[:name]
+      name: params[:name],
+      email: params[:email]
   }
   # TODO: Add error trapping for things like duplicate username, nil password, etc.
   settings.users_coll.insert(user_doc).to_json
@@ -103,7 +104,8 @@ put '/u/:id' do
   user_doc = {
       username: params[:username],
       password_token: BCrypt::Password.create(params[:password]),
-      name: params[:name]
+      name: params[:name],
+      email: params[:email]
   }
   settings.users_coll.update({'username' => params[:id]}, user_doc).to_json
 end
