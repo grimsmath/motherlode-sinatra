@@ -1,6 +1,6 @@
 Motherlode.Models.Nugget = Backbone.Model.extend
   paramRoot: "nugget"
-  url: "/n/:id"
+  url: "/n"
   defaults:
     id: null
     title: null

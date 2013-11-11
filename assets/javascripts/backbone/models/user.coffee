@@ -1,6 +1,7 @@
 Motherlode.Models.User = Backbone.Model.extend
   paramRoot: "user"
-  url: "/u/:id"
+  url: "/u"
+  idAttribute: "_id"
   defaults:
     _id: null
     title: ""
@@ -8,7 +9,8 @@ Motherlode.Models.User = Backbone.Model.extend
     password: null
     name: null
 
-  parse: (response, options) ->
+  parse: (response) ->
+    response._id = response._id['$oid']
     return response
 
 Motherlode.Collections.Users = Backbone.Collection.extend

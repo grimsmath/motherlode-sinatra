@@ -45,18 +45,34 @@ Motherlode.Views.UserShowView = Backbone.View.extend
     @render()
 
   render: ->
-    @$el.html(@template)
+    if (@model == null)
+      @$el.html @template()
+    else
+      @$el.html @template(@model.toJSON())
     @
 
 Motherlode.Views.UserEditView = Backbone.View.extend
   template: JST["backbone/templates/users/edit"]
   el: "#backbone-container"
 
+  events:
+    "click .save"   : "save"
+    "click .cancel" : "cancel"
+
   initialize: ->
     @render()
 
+  save: ->
+    console.log "save is not implemented yet"
+
+  cancel: ->
+    window.history.back()
+
   render: ->
-    @$el.html(@template)
+    if (@model == null)
+      @$el.html @template()
+    else
+      @$el.html @template(@model.toJSON())
     @
 
 Motherlode.Views.UserLoginView = Backbone.View.extend

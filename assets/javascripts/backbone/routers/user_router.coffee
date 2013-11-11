@@ -10,6 +10,14 @@ Motherlode.Routers.UserRouter = Backbone.Router.extend
     "user/edit/:id"     : "editUser"
     "user/delete/:id"   : "delUser"
 
+  initialize: ->
+    @initCollections()
+
+  initCollections: ->
+    @users = new Motherlode.Collections.Users()
+    @users.reset()
+    @users.fetch()
+
   showProfile: ->
     console.log "showProfile is not implemented yet"
 
@@ -26,17 +34,18 @@ Motherlode.Routers.UserRouter = Backbone.Router.extend
     console.log "doReset is not implemented yet"
 
   addUser: ->
-    @AddView = new Motherlode.Views.UserEditView()
+    @AddView = new Motherlode.Views.UserEditView({model: null})
 
   showUser: (id) ->
-    console.log "showUser is not implemented yet"
+    user = @users.get(id)
+    @ShowView = new Motherlode.Views.UserShowView({model: user})
 
   newUser: ->
     @NewView = new Motherlode.Views.UserEditView({model: null})
 
   editUser: (id) ->
-    @EditView = new Motherlode.Views.UserEditView({model: @model})
-    console.log "editUser is not implemented yet"
+    user = @users.get(id)
+    @EditView = new Motherlode.Views.UserEditView({model: user})
 
   delUser: (id) ->
     console.log "delUser is not implemented yet"
