@@ -1,5 +1,6 @@
-Motherlode.Routers.CountyRouter = Backbone.Router.extend
+Motherlode.Routers.UserRouter = Backbone.Router.extend
   routes:
+    "users"             : "showUsers"
     "user"              : "showProfile"
     "user/login"        : "doLogin"
     "user/logout"       : "doLogout"
@@ -9,7 +10,10 @@ Motherlode.Routers.CountyRouter = Backbone.Router.extend
     "user/delete/:id"   : "delUser"
 
   showProfile: ->
-    @view = new Motherlode.Views.ProfileView()
+    console.log "showProfile is not implemented yet"
+
+  showUsers: ->
+    @UsersView = new Motherlode.Views.UsersListView()
 
   doLogin: ->
     console.log "doLogin is not implemented yet"

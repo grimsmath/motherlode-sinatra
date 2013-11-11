@@ -15,3 +15,4 @@ class window.Motherlode
     Motherlode.Routers.CountyRouter = new Motherlode.Routers.CountyRouter()
     Motherlode.Routers.CategoryRouter = new Motherlode.Routers.CategoryRouter()
     Motherlode.Routers.NuggetRouter = new Motherlode.Routers.NuggetRouter()
+    Motherlode.Routers.UserRouter = new Motherlode.Routers.UserRouter()
