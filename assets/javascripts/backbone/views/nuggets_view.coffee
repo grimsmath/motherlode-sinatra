@@ -9,61 +9,21 @@ Motherlode.Views.NuggetListView = Backbone.View.extend
 
   initialize: ->
     @render()
-    @view = new Motherlode.Views.ModeratedListView()
-    @$el.find('#nuggets-grid-container').html @view.render().el
+    @collection = new Motherlode.Collections.Nuggets()
+    @collection.reset()
+    @collection.fetch()
+    @view = new Motherlode.Views.NuggetEntryView({model: @collection})
+    @$el.find('tbody').html @view.render().el
 
   addNugget: ->
-    console.log "addNugget not implemented yet"
+    console.log "addNugget called"
+    @AddView = new Motherlode.Views.NuggetEditView()
 
   editNugget: ->
     console.log "editNugget not implemented yet"
 
   delNugget: ->
     console.log "delNugget not implemented yet"
-
-  render: ->
-    @$el.html @template()
-    @
-
-Motherlode.Views.ModeratedListView = Backbone.View.extend
-  template: JST["backbone/templates/nuggets/moderated"]
-  el: "#nuggets-grid-container"
-  tagName: "div"
-
-  initialize: ->
-    @collection = new Motherlode.Collections.Nuggets()
-    @collection.on('add', @addOne, @)
-    @collection.on('reset', @render, @)
-    @collection.reset()
-    @render()
-    @addAll()
-
-  addAll: ->
-    @collection.fetch()
-
-  addOne: (entry) ->
-    @view = new Motherlode.Views.NuggetEntryView({model: entry})
-    @$el.find('tbody').html @view.render().el
-
-  render: ->
-    @$el.html @template()
-    @
-
-Motherlode.Views.UnmoderatedListView = Backbone.View.extend
-  template: JST["backbone/templates/nuggets/unmoderated"]
-  el: "#nuggets-grid-container"
-  tagName: "div"
-
-  events:
-    "click .selNugget" : "selNugget"
-
-  initialize: ->
-    @render()
-
-  selNugget: ->
-    console.log @view
-    console.log @view.closest('tr').html()
-    @$el.closest('tr').css("background-color", "yellow")
 
   render: ->
     @$el.html @template()

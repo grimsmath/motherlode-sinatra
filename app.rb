@@ -16,6 +16,7 @@ configure do
   # MongoClient's from_uri method requires ENV['MONGODB_URI'] to be set
   # You may set in RACK_ENV or using foreman during development
   mongo_client = Mongo::MongoClient.from_uri
+
   # TODO: Extract DB name and configuration from ENV
   mongo_db = mongo_client.db('sinatraslode', pool_size: 5, timeout: 2)
 
@@ -27,7 +28,7 @@ configure do
 end
 
 helpers do
-  # Determine if user and password are valid, return user if valid, nil if not
+  # Determine if users and password are valid, return users if valid, nil if not
   def current_user
     user = settings.users_coll.find_one('username' => params[:u])
     return user['_id'] if user && BCrypt::Password.new(user['password_token']) == params[:p]
@@ -46,7 +47,7 @@ helpers do
     category['moderators'] || []
   end
 
-  # Recursively ascend category taxonomy returning true when user is authorized,
+  # Recursively ascend category taxonomy returning true when users is authorized,
   # false if root is encountered without finding authorization.  Careful, this is
   # expensive.
   def user_may_moderate? (category_id)
@@ -57,7 +58,7 @@ helpers do
     user_may_moderate? category['parent'] unless category['parent'].nil?
   end
 
-  # Determine if user is a product root moderator and may modify categories and users.
+  # Determine if users is a product root moderator and may modify categories and users.
   def user_is_admin?
     direct_moderators(product_id).include? current_user
   end
@@ -78,7 +79,7 @@ get '/u' do
   settings.users_coll.find(nil,{:fields => {"password_token" => 0}}).to_a.to_json
 end
 
-# Create new user
+# Create new users
 post '/u' do
   user_doc = {
       username: params[:username],
@@ -89,13 +90,13 @@ post '/u' do
   settings.users_coll.insert(user_doc).to_json
 end
 
-# Retrieve user profile
+# Retrieve users profile
 get '/u/:id' do
   halt 401 unless user_is_admin? # TODO: OR Current User
   settings.users_coll.find_one({'username' => params[:id]},{:fields => {"password_token" => 0}}).to_json
 end
 
-# Update user profile
+# Update users profile
 put '/u/:id' do
   halt 401 unless user_is_admin? # TODO: OR Current User
   user_doc = {
@@ -106,7 +107,7 @@ put '/u/:id' do
   settings.users_coll.update({'username' => params[:id]}, user_doc).to_json
 end
 
-# Delete user account
+# Delete users account
 delete '/u/:id' do
   halt 401 unless user_is_admin? # TODO: OR Current User
   settings.users_coll.remove('_id'=> params[:id]).to_json
@@ -116,7 +117,7 @@ end
 
 # Index of all categories
 get '/c' do
-  halt 401 unless user_is_admin?
+  #halt 401 unless user_is_admin?
   settings.categories_coll.find.to_a.to_json
 end
 
@@ -185,7 +186,7 @@ end
 
 # Index of all nuggets
 get '/n' do
-  halt 401 unless user_is_admin?
+  #halt 401 unless user_is_admin?
   settings.nuggets_coll.find.to_json
 end
 
@@ -195,7 +196,7 @@ post '/n' do
       title: params[:title],
       category: BSON::ObjectId(params[:category]),
       content: params[:content],
-      author: BSON::ObjectId(params[:user]),
+      author: BSON::ObjectId(params[:users]),
       published: false
   }
   # TODO: Add error trapping
@@ -215,7 +216,7 @@ put '/n/:id' do
       title: params[:title],
       category: BSON::ObjectId(params[:category]),
       content: params[:content],
-      author: BSON::ObjectId(params[:user]),
+      author: BSON::ObjectId(params[:users]),
       published: false
   }
   # TODO: Add error trapping

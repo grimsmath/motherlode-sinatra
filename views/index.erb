@@ -3,9 +3,15 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>First Coast Green Map</title>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src='/assets/application.js'></script>
+
+  <!-- Stylesheets -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" media="all" rel="stylesheet" >
   <link href="/assets/application.css" media="all" rel="stylesheet" />
+
+  <!-- Scripts -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+  <script src='/assets/application.js'></script>
 </head>
 <body>
 <div class="navbar navbar-default navbar-fixed-top">
@@ -48,18 +54,39 @@
   <div class="row" style="margin-top: 20px;">
     <div class="col-md-3">
       <div class="panel panel-primary">
-        <div class="panel-heading">Public</div>
+        <div class="panel-heading">Public Views</div>
         <div class="list-group">
-          <a href="#" class="list-group-item">Welcome<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
-          <a href="#counties" class="list-group-item">Counties<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
-          <a href="#categories" class="list-group-item">Categories<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+          <a href="#" class="list-group-item">Welcome
+            <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+
+          <a href="#main/counties" class="list-group-item">Counties
+            <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+
+          <a href="#main/categories" class="list-group-item">Categories
+            <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+
+          <a href="#main/nuggets" class="list-group-item">Nuggets
+            <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+        </div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">Content Management</div>
+        <div class="list-group">
+          <a href="#nuggets" class="list-group-item">My Nuggets
+            <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+
+          <a href="#profile" class="list-group-item">My Profile
+            <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
         </div>
       </div>
       <div class="panel panel-danger">
-        <div class="panel-heading">Content Management</div>
+        <div class="panel-heading">System Administration</div>
         <div class="list-group">
-          <a href="#nuggets" class="list-group-item">My Nuggets<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
-          <a href="#profile" class="list-group-item">My Profile<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+          <a href="#users" class="list-group-item">Users
+            <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+
+          <a href="#categories" class="list-group-item">Categories
+            <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
         </div>
       </div>
     </div>
