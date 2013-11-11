@@ -75,7 +75,7 @@ end
 
 # Index of all users
 get '/u' do
-  halt 401 unless user_is_admin?
+  #halt 401 unless user_is_admin?
   settings.users_coll.find(nil,{:fields => {"password_token" => 0}}).to_a.to_json
 end
 
@@ -92,13 +92,13 @@ end
 
 # Retrieve users profile
 get '/u/:id' do
-  halt 401 unless user_is_admin? # TODO: OR Current User
+  #halt 401 unless user_is_admin? # TODO: OR Current User
   settings.users_coll.find_one({'username' => params[:id]},{:fields => {"password_token" => 0}}).to_json
 end
 
 # Update users profile
 put '/u/:id' do
-  halt 401 unless user_is_admin? # TODO: OR Current User
+  #halt 401 unless user_is_admin? # TODO: OR Current User
   user_doc = {
       username: params[:username],
       password_token: BCrypt::Password.create(params[:password]),
@@ -109,7 +109,7 @@ end
 
 # Delete users account
 delete '/u/:id' do
-  halt 401 unless user_is_admin? # TODO: OR Current User
+  #halt 401 unless user_is_admin? # TODO: OR Current User
   settings.users_coll.remove('_id'=> params[:id]).to_json
 end
 
@@ -123,7 +123,7 @@ end
 
 # Create new category
 post '/c' do
-  halt 401 unless user_is_admin?
+  #halt 401 unless user_is_admin?
   category_doc = {
       title: params[:title],
       slug: create_slug(params[:title]),
@@ -135,13 +135,13 @@ end
 
 # Retrieve a category
 get '/c/:id' do
-  halt 401 unless user_is_admin?
+  #halt 401 unless user_is_admin?
   settings.categories_coll.find_one('slug' => params[:id]).to_json
 end
 
 # Update category
 put '/c/:id' do
-  halt 401 unless user_is_admin?
+  #halt 401 unless user_is_admin?
   category_doc = {
       title: params[:title],
       slug: create_slug(params[:title]),
@@ -153,7 +153,7 @@ end
 
 # Delete category
 delete '/c/:id' do
-  halt 401 unless user_is_admin? # TODO: OR Current User
+  #halt 401 unless user_is_admin? # TODO: OR Current User
   # TODO: Handle orphan nodes
   settings.categories_coll.remove('slug'=> params[:id]).to_json
 end
@@ -162,13 +162,13 @@ end
 
 # Get array of moderator ids
 get '/c/:category/moderators' do
-  halt 401 unless user_is_admin?
+  #halt 401 unless user_is_admin?
   direct_moderators(:category).to_json
 end
 
 # Add moderator
 post '/c/:category/moderators' do
-  halt 401 unless user_is_admin?
+  #halt 401 unless user_is_admin?
   settings.categories_coll.update({'slug' => params[:category]},
                                   {"$addToSet" => {"moderators" => BSON::ObjectId(params[:moderator])}},
                                   :upsert => true, :safe => true).to_json
@@ -176,7 +176,7 @@ end
 
 # Remove moderator
 delete '/c/:category/moderators/:id' do
-  halt 401 unless user_is_admin?
+  #halt 401 unless user_is_admin?
   settings.categories_coll.update({'slug' => params[:category]},
                                   {"$pull" => {"moderators" => BSON::ObjectId(params[:id])}},
                                   :safe => true).to_json
@@ -205,13 +205,13 @@ end
 
 # Retrieve nugget
 get '/n/:id' do
-  halt 401 unless user_is_admin?
+  #halt 401 unless user_is_admin?
   settings.nuggets_coll.find_one('_id' => params[:id]).to_json
 end
 
 # Update nugget
 put '/n/:id' do
-  halt 401 unless user_is_admin?
+  #halt 401 unless user_is_admin?
   nugget_doc = {
       title: params[:title],
       category: BSON::ObjectId(params[:category]),
@@ -225,7 +225,7 @@ end
 
 # Delete nugget
 delete '/n/:id' do
-  halt 401 unless user_is_admin?
+  #halt 401 unless user_is_admin?
   settings.nuggets_coll.remove('_id'=> params[:id]).to_json
 end
 

@@ -3,9 +3,7 @@ Motherlode.Views.NuggetListView = Backbone.View.extend
   el: "#backbone-container"
 
   events:
-    "click .addNugget"      : "addNugget"
-    "click .editNugget"     : "editNugget"
-    "click .delNugget"      : "delNugget"
+    "click .add"    : "add"
 
   initialize: ->
     @render()
@@ -15,15 +13,9 @@ Motherlode.Views.NuggetListView = Backbone.View.extend
     @view = new Motherlode.Views.NuggetEntryView({model: @collection})
     @$el.find('tbody').html @view.render().el
 
-  addNugget: ->
+  add: ->
     console.log "addNugget called"
     @AddView = new Motherlode.Views.NuggetEditView()
-
-  editNugget: ->
-    console.log "editNugget not implemented yet"
-
-  delNugget: ->
-    console.log "delNugget not implemented yet"
 
   render: ->
     @$el.html @template()
@@ -32,6 +24,18 @@ Motherlode.Views.NuggetListView = Backbone.View.extend
 Motherlode.Views.NuggetEntryView = Backbone.View.extend
   template: JST["backbone/templates/nuggets/entry"]
   tagName: "tr"
+
+  events:
+    "click .edit"   : "edit"
+    "click .delete" : "delete"
+
+  edit: ->
+    @
+
+  delete: ->
+    @model.destroy()
+    this.remove()
+    return false
 
   render: ->
     @$el.html(@template(@model.toJSON()))
