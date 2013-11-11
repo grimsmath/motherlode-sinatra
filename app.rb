@@ -37,7 +37,7 @@ helpers do
   # Determine product from hostname setting root of taxonomy
   def product_id
     # Currently hardcoded.  TODO: Add header inspection and product list
-    BSON.ObjectId('5277e610e4b0c2820179e545')
+    BSON.ObjectId('52812e1c91292746b6000001')
   end
 
   # Get direct moderators of a category
