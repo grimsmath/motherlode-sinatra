@@ -70,6 +70,12 @@ helpers do
   end
 end
 
+post '/login' do
+  user = current_user
+  halt 401 unless user
+  user.to_json
+end
+
 # BASIC CRUD-- Mostly for administrative use
 
 # User management routes
