@@ -16,10 +16,11 @@ Motherlode.Views.UsersListView = Backbone.View.extend
     @$el.find('tbody').html @view.render().el
 
   addUser: ->
-    console.log "addUser is not implemented yet"
+    @AddView = new Motherlode.Views.UserEditView()
 
   editUser: (id) ->
-    console.log "editUser is not implemented yet"
+    entry = @collection.get(id)
+    @AddView = new Motherlode.Views.UserEditView({model: entry})
 
   delUser: (id) ->
     console.log "delUser is not implemented yet"
