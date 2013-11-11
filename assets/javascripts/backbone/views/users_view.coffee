@@ -3,30 +3,30 @@ Motherlode.Views.UsersListView = Backbone.View.extend
   el: '#backbone-container'
 
   events:
-    "click .addUser"      : "addUser"
-    "click .editUser"     : "editUser"
-    "click .delUser"      : "delUser"
+    "click .add"      : "add"
 
   initialize: ->
-    @render()
     @collection = new Motherlode.Collections.Users()
+    @collection.on('add', @addOne, @)
+    @collection.on('reset', @render, @)
     @collection.reset()
-    @collection.fetch()
-    @view = new Motherlode.Views.UserEntryView({model: @collection})
-    @$el.find('tbody').html @view.render().el
+    @render()
+    @addAll()
 
-  addUser: ->
+  addAll: ->
+    @collection.fetch()
+    @
+
+  addOne: (entry) ->
+    @view = new Motherlode.Views.UserEntryView({model: entry})
+    @$el.find('tbody').html @view.render().el
+    @
+
+  add: ->
     @AddView = new Motherlode.Views.UserEditView()
 
-  editUser: (id) ->
-    entry = @collection.get(id)
-    @AddView = new Motherlode.Views.UserEditView({model: entry})
-
-  delUser: (id) ->
-    console.log "delUser is not implemented yet"
-
   render: ->
-    @$el.html(@template)
+    @$el.html @template()
     @
 
 Motherlode.Views.UserEntryView = Backbone.View.extend

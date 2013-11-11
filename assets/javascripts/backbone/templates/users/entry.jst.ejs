@@ -1,8 +1,7 @@
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td><a href="#user/<%= _id.$oid %>"><%= username %></a></td>
+<td><%= name %></td>
 <td>&nbsp;</td>
 <td>
-  <a href="#users/show/<%= id %>" class="showUser">View</a>
-  <a href="#users/edit/<%= id %>" class="editUser">Edit</a>
-  <a href="#userss/delete/<%= id %>" class="delUser">Delete</a>
+  <a href="#user/edit/<%= _id.$oid %>" class="btn btn-default">Edit</a>&nbsp;
+  <a href="#user/delete/<%= _id.$oid %>" class="btn btn-default">Delete</a>
 </td>
