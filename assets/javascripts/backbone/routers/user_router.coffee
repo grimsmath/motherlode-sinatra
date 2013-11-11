@@ -1,7 +1,5 @@
 Motherlode.Routers.UserRouter = Backbone.Router.extend
   routes:
-    "users"             : "showUsers"
-    "user"              : "showProfile"
     "user/login"        : "doLogin"
     "user/logout"       : "doLogout"
     "user/reset"        : "doReset"
@@ -9,12 +7,15 @@ Motherlode.Routers.UserRouter = Backbone.Router.extend
     "user/show/:id"     : "showUser"
     "user/edit/:id"     : "editUser"
     "user/delete/:id"   : "delUser"
+    "users"             : "showUsers"
+    "user"              : "showProfile"
 
   initialize: ->
-    @initCollections()
+    if not @users?
+      @users = new Motherlode.Collections.Users()
+      @initCollections()
 
   initCollections: ->
-    @users = new Motherlode.Collections.Users()
     @users.reset()
     @users.fetch()
 
@@ -22,7 +23,7 @@ Motherlode.Routers.UserRouter = Backbone.Router.extend
     console.log "showProfile is not implemented yet"
 
   showUsers: ->
-    @UsersView = new Motherlode.Views.UsersListView()
+    @view = new Motherlode.Views.UsersListView({collection: @users})
 
   doLogin: ->
     console.log "doLogin is not implemented yet"
@@ -34,18 +35,23 @@ Motherlode.Routers.UserRouter = Backbone.Router.extend
     console.log "doReset is not implemented yet"
 
   addUser: ->
-    @AddView = new Motherlode.Views.UserEditView({model: null})
+    console.log "addUser called"
+    @view = new Motherlode.Views.UserEditView({model: null})
 
   showUser: (id) ->
+    console.log "showUser called"
     user = @users.get(id)
-    @ShowView = new Motherlode.Views.UserShowView({model: user})
-
-  newUser: ->
-    @NewView = new Motherlode.Views.UserEditView({model: null})
+    console.log user
+    @view = new Motherlode.Views.UserShowView({model: user})
 
   editUser: (id) ->
+    console.log "editUser called"
+    console.log @users
     user = @users.get(id)
-    @EditView = new Motherlode.Views.UserEditView({model: user})
+    console.log user
+    @view = new Motherlode.Views.UserEditView({model: user})
 
   delUser: (id) ->
-    console.log "delUser is not implemented yet"
+    console.log "delUser called"
+    user = @users.get(id)
+    @users.remove(user)

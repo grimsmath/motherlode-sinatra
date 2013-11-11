@@ -2,11 +2,8 @@ Motherlode.Views.UsersListView = Backbone.View.extend
   template: JST["backbone/templates/users/list"]
   el: '#backbone-container'
 
-  events:
-    "click .add"      : "add"
-
   initialize: ->
-    @collection = new Motherlode.Collections.Users()
+    console.log "UsersListView initialize called"
     @collection.on('add', @addOne, @)
     @collection.on('reset', @render, @)
     @collection.reset()
@@ -22,9 +19,6 @@ Motherlode.Views.UsersListView = Backbone.View.extend
     @$el.find('tbody').html @view.render().el
     @
 
-  add: ->
-    @AddView = new Motherlode.Views.UserEditView()
-
   render: ->
     @$el.html @template()
     @
@@ -34,7 +28,7 @@ Motherlode.Views.UserEntryView = Backbone.View.extend
   tagName: "tr"
 
   render: ->
-    @$el.html(@template(@model.toJSON()))
+    @$el.html @template(@model.toJSON())
     @
 
 Motherlode.Views.UserShowView = Backbone.View.extend
@@ -45,10 +39,7 @@ Motherlode.Views.UserShowView = Backbone.View.extend
     @render()
 
   render: ->
-    if (@model == null)
-      @$el.html @template()
-    else
-      @$el.html @template(@model.toJSON())
+    @$el.html @template(@model.toJSON())
     @
 
 Motherlode.Views.UserEditView = Backbone.View.extend
@@ -69,10 +60,7 @@ Motherlode.Views.UserEditView = Backbone.View.extend
     window.history.back()
 
   render: ->
-    if (@model == null)
-      @$el.html @template()
-    else
-      @$el.html @template(@model.toJSON())
+    @$el.html @template(@model.toJSON())
     @
 
 Motherlode.Views.UserLoginView = Backbone.View.extend

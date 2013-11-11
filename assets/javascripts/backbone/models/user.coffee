@@ -4,10 +4,10 @@ Motherlode.Models.User = Backbone.Model.extend
   idAttribute: "_id"
   defaults:
     _id: null
-    title: ""
+    name: null
+    email: null
     username: null
     password: null
-    name: null
 
   parse: (response) ->
     response._id = response._id['$oid']
