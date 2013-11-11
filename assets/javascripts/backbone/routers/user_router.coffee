@@ -24,6 +24,9 @@ Motherlode.Routers.UserRouter = Backbone.Router.extend
   doReset: ->
     console.log "doReset is not implemented yet"
 
+  addUser: ->
+    @AddView = new Motherlode.Views.UsersEditView()
+
   showUser: (id) ->
     console.log "showUser is not implemented yet"
 

@@ -2,14 +2,33 @@ Motherlode.Views.UsersListView = Backbone.View.extend
   template: JST["backbone/templates/users/list"]
   el: '#backbone-container'
 
+  events:
+    "click .addUser"      : "addUser"
+    "click .editUser"     : "editUser"
+    "click .delUser"      : "delUser"
+
   initialize: ->
     @render()
+    @collection = new Motherlode.Collections.Users()
+    @collection.reset()
+    @collection.fetch()
+    @view = new Motherlode.Views.UserEntryView({model: @collection})
+    @$el.find('tbody').html @view.render().el
+
+  addUser: ->
+    console.log "addUser is not implemented yet"
+
+  editUser: (id) ->
+    console.log "editUser is not implemented yet"
+
+  delUser: (id) ->
+    console.log "delUser is not implemented yet"
 
   render: ->
     @$el.html(@template)
     @
 
-Motherlode.Views.UsersEntryView = Backbone.View.extend
+Motherlode.Views.UserEntryView = Backbone.View.extend
   template: JST["backbone/templates/users/entry"]
   tagName: "tr"
 
@@ -17,7 +36,7 @@ Motherlode.Views.UsersEntryView = Backbone.View.extend
     @$el.html(@template(@model.toJSON()))
     @
 
-Motherlode.Views.UsersShowView = Backbone.View.extend
+Motherlode.Views.UserShowView = Backbone.View.extend
   template: JST["backbone/templates/users/show"]
   el: "#backbone-container"
 
@@ -28,7 +47,7 @@ Motherlode.Views.UsersShowView = Backbone.View.extend
     @$el.html(@template)
     @
 
-Motherlode.Views.UsersEditView = Backbone.View.extend
+Motherlode.Views.UserEditView = Backbone.View.extend
   template: JST["backbone/templates/users/edit"]
   el: "#backbone-container"
 
@@ -39,8 +58,8 @@ Motherlode.Views.UsersEditView = Backbone.View.extend
     @$el.html(@template)
     @
 
-Motherlode.Views.UsersLoginView = Backbone.View.extend
-  template: JST["backbone/templates/user/login"]
+Motherlode.Views.UserLoginView = Backbone.View.extend
+  template: JST["backbone/templates/users/login"]
   tagName: "div"
 
   initialize: ->

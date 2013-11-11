@@ -16,7 +16,8 @@ Motherlode.Views.NuggetListView = Backbone.View.extend
     @$el.find('tbody').html @view.render().el
 
   addNugget: ->
-    @NewView = new Motherlode.Views.NuggetEditView()
+    console.log "addNugget called"
+    @AddView = new Motherlode.Views.NuggetEditView()
 
   editNugget: ->
     console.log "editNugget not implemented yet"
