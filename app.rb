@@ -101,19 +101,19 @@ end
 # Retrieve users profile
 get '/u/:id' do
   halt 401 unless user_is_admin? # TODO: OR Current User
-  settings.users_coll.find_one({'username' => params[:id]},{:fields => {"password_token" => 0}}).to_json
+  settings.users_coll.find_one({'_id' => params[:id]},{:fields => {"password_token" => 0}}).to_json
 end
 
 # Update users profile
 put '/u/:id' do
-  halt 401 unless user_is_admin? # TODO: OR Current User
+  halt 401 unless user_is_admin? || current_user == params[:id]
   user_doc = {
       username: params[:username],
       password_token: BCrypt::Password.create(params[:password]),
       name: params[:name],
       email: params[:email]
   }
-  settings.users_coll.update({'username' => params[:id]}, user_doc).to_json
+  settings.users_coll.update({'_id' => params[:id]}, user_doc).to_json
 end
 
 # Delete users account
@@ -162,7 +162,7 @@ end
 
 # Delete category
 delete '/c/:id' do
-  halt 401 unless user_is_admin? # TODO: OR Current User
+  halt 401 unless user_is_admin?
   # TODO: Handle orphan nodes
   settings.categories_coll.remove('slug'=> params[:id]).to_json
 end
