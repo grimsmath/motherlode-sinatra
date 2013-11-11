@@ -18,7 +18,7 @@ configure do
   mongo_client = Mongo::MongoClient.from_uri
 
   # TODO: Extract DB name and configuration from ENV
-  mongo_db = mongo_client.db('sinatraslode', pool_size: 5, timeout: 2)
+  mongo_db = mongo_client.db('motherlode', pool_size: 5, timeout: 2)
 
   set :mongo_client, mongo_client
   set :mongo_db, mongo_db
@@ -61,6 +61,7 @@ helpers do
   # Determine if users is a product root moderator and may modify categories and users.
   def user_is_admin?
     direct_moderators(product_id).include? current_user
+    true
   end
 
   # Create a well formatted slug, downcased and spaces substituted with hyphen
