@@ -3,7 +3,6 @@ Motherlode.Views.UsersListView = Backbone.View.extend
   el: '#backbone-container'
 
   initialize: ->
-    console.log "UsersListView initialize called"
     @collection.on('add', @addOne, @)
     @collection.on('reset', @render, @)
     @collection.reset()
@@ -52,6 +51,37 @@ Motherlode.Views.UserEditView = Backbone.View.extend
 
   initialize: ->
     @render()
+
+  save: (e) ->
+    e.preventDefault()
+    e.stopPropagation()
+
+    id = $('#id').val()
+    username = $('#username').val()
+    name = $('#name').val()
+    email = $('#email').val()
+    password = $('#password').val()
+
+    console.log id
+    console.log username
+    console.log name
+    console.log email
+    console.log password
+
+    @model.save
+      id: id
+      username: username
+      name: name
+      email: email
+      password: password
+
+      success: ->
+        window.location.hash = "#users"
+
+      @
+
+  cancel: ->
+    window.history.back()
 
   render: ->
     @$el.html @template(@model.toJSON())

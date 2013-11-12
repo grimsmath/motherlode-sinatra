@@ -1,16 +1,20 @@
 Motherlode.Models.User = Backbone.Model.extend
   paramRoot: "user"
-  url: "/u/:id"
   idAttribute: "_id"
-  defaults:
-    _id: null
-    name: null
-    email: null
-    username: null
-    password: null
 
   parse: (response) ->
     response._id = response._id['$oid']
+    response.id = response._id
+
+    if not response.username?
+      response.username = "Username not set"
+
+    if not response.password?
+      response.password = "Password not set"
+
+    if not response.name?
+      response.name = "Name not set"
+
     return response
 
 Motherlode.Collections.Users = Backbone.Collection.extend

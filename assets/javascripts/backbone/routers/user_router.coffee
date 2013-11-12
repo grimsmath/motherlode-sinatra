@@ -8,22 +8,34 @@ Motherlode.Routers.UserRouter = Backbone.Router.extend
     "user/edit/:id"     : "editUser"
     "user/delete/:id"   : "delUser"
     "users"             : "showUsers"
-    "user"              : "showProfile"
 
   initialize: ->
     if not @users?
       @users = new Motherlode.Collections.Users()
-      @initCollections()
-
-  initCollections: ->
-#    @users.reset()
-#    @users.fetch()
-
-  showProfile: ->
-    console.log "showProfile is not implemented yet"
+      @users.reset @users.previousModels
+      @users.fetch()
 
   showUsers: ->
     @view = new Motherlode.Views.UsersListView({collection: @users})
+
+  addUser: ->
+    @view = new Motherlode.Views.UserEditView({model: null})
+
+  showUser: (id) ->
+    user = @users.get(id)
+    console.log user
+    @view = new Motherlode.Views.UserShowView({model: user})
+
+  editUser: (id) ->
+    console.log @users
+    user = @users.get(id)
+    console.log user
+    @view = new Motherlode.Views.UserEditView({model: user})
+
+  delUser: (id) ->
+    user = @users.get(id)
+    @users.remove(user)
+    @users.save()
 
   doLogin: ->
     console.log "doLogin is not implemented yet"
@@ -33,26 +45,3 @@ Motherlode.Routers.UserRouter = Backbone.Router.extend
 
   doReset: ->
     console.log "doReset is not implemented yet"
-
-  addUser: ->
-    console.log "addUser called"
-    @view = new Motherlode.Views.UserEditView({model: null})
-
-  showUser: (id) ->
-    console.log "showUser called"
-    console.log @users.models
-    user = @users.get(id)
-    console.log user
-    @view = new Motherlode.Views.UserShowView({model: user})
-
-  editUser: (id) ->
-    console.log "editUser called"
-    console.log @users
-    user = @users.get(id)
-    console.log user
-    @view = new Motherlode.Views.UserEditView({model: user})
-
-  delUser: (id) ->
-    console.log "delUser called"
-    user = @users.get(id)
-    @users.remove(user)
