@@ -14,6 +14,7 @@ gem 'sprockets'
 gem 'json'
 gem 'bcrypt-ruby'
 gem 'haml'
+gem 'haml_ejs'
 
 group :development do
   gem 'rerun'
