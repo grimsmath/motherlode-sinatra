@@ -13,6 +13,7 @@ gem 'ejs'
 gem 'sprockets'
 gem 'json'
 gem 'bcrypt-ruby'
+gem 'haml'
 
 group :development do
   gem 'rerun'

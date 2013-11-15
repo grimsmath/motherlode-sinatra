@@ -1,18 +1,15 @@
-class window.Motherlode
-  @Models: {}
-  @Collections: {}
-  @Views: {}
-  @Routers: {}
+Motherlode = new Backbone.Marionette.Application()
 
-  sanity: -> true
+Motherlode.addRegions
+  header  : '#header'
+  wrapper : '#wrapper'
+  content : '#content'
+  nav     : '#nav'
+  footer  : '#footer'
 
-  constructor: ->
-    @initRouters()
-    Backbone.history.start()
+window.Motherlode = Motherlode
 
-  initRouters: ->
-    Motherlode.Routers.MainRouter = new Motherlode.Routers.MainRouter()
-    Motherlode.Routers.CountyRouter = new Motherlode.Routers.CountyRouter()
-    Motherlode.Routers.CategoryRouter = new Motherlode.Routers.CategoryRouter()
-    Motherlode.Routers.NuggetRouter = new Motherlode.Routers.NuggetRouter()
-    Motherlode.Routers.UserRouter = new Motherlode.Routers.UserRouter()
+$(document).ready ->
+  log 'document:ready'
+  @logger = new Logger()
+  Motherlode.start()

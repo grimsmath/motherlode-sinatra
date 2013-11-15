@@ -13,7 +13,8 @@ require 'json'
 require 'bcrypt'
 
 configure do
-  ENV['MONGODB_URI'] =  'mongodb://motherlode_dev:dev_motherlode@ds053648.mongolab.com:53648/motherlode'
+  ENV['MONGODB_URI'] = 'mongodb://motherlode_dev:dev_motherlode@ds053648.mongolab.com:53648/motherlode'
+
   # MongoClient's from_uri method requires ENV['MONGODB_URI'] to be set
   # You may set in RACK_ENV or using foreman during development
   mongo_client = Mongo::MongoClient.from_uri
@@ -264,5 +265,6 @@ end
 
 
 get '/' do
-  erb :index
+  haml :index
+  #erb :index
 end
