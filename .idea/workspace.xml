@@ -2,46 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53f1b524-6474-4269-86be-1831cf5280f8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/index.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/utilities/logging.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/motherlode.app.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/categories/motherlode.category.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/categories/motherlode.categorylist.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/nuggets/motherlode.nugget.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/nuggets/motherlode.nuggetlist.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/users/motherlode.userlist.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/users/motherlode.users.coffee" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/models/category.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/models/county.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/models/nugget.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/models/user.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/routers/category_router.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/routers/county_router.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/routers/main_router.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/routers/nugget_router.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/routers/user_router.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/counties/edit.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/counties/entry.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/counties/list.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/counties/show.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/util/auth_redirect.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/views/categories_view.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/views/counties_view.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/views/nuggets_view.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/views/users_view.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/views/welcome_view.coffee" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.erb" afterPath="$PROJECT_DIR$/views/index.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/stylesheets/main.css.scss" afterPath="$PROJECT_DIR$/assets/stylesheets/main.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/motherlode.coffee" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/motherlode.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/vendor/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/vendor/marionette.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/vendor/mongodb.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="motherlode.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384485568395" ignored="false" />
+    <file path="/Dummy.txt" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384541742192" ignored="false" />
     <file path="/a.rxml" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384006859021" ignored="false" />
     <file path="/a.feature" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384196001175" ignored="false" />
     <file path="/edit.jst.ejs" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384212848855" ignored="false" />
@@ -230,6 +198,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Motherlode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Motherlode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -560,10 +550,14 @@
       <created>1384208942122</created>
       <updated>1384208942122</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed one collection get issue but not all">
+      <created>1384529762972</created>
+      <updated>1384529762972</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="0">
+  <component name="TodoView" selected-index="5">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -587,11 +581,12 @@
     <frame x="0" y="22" width="1440" height="829" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2625538" sideWeight="0.6743869" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2625538" sideWeight="0.67076504" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -601,7 +596,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -649,7 +643,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed one collection get issue but not all" />
+    <option name="LAST_COMMIT_MESSAGE" value="added more local vendor javascripts" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -666,6 +660,7 @@
     <MESSAGE value="Enhancements to backbone views and routers" />
     <MESSAGE value="Trying to figure out users.get" />
     <MESSAGE value="Fixed one collection get issue but not all" />
+    <MESSAGE value="added more local vendor javascripts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -682,22 +677,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/javascripts/vendor/mongodb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="21" selection-start="1051" selection-end="1070" vertical-scroll-proportion="0.68039775" />
+        <state line="46" column="21" selection-start="1051" selection-end="1070" vertical-scroll-proportion="0.68039775">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/categories/motherlode.categorylist.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" />
+        <state line="15" column="0" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/users/motherlode.userlist.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="25" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0" />
+        <state line="18" column="25" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/nuggets/motherlode.nuggetlist.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="27" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0" />
+        <state line="22" column="27" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.ru">
