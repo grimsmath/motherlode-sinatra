@@ -8,9 +8,3 @@ Motherlode.module 'Categories', (Categories, Motherlode, Backbone, Marionette, $
 
     initialize: ->
       log 'Categories.CategoryCollection::initialize'
-
-  Categories.getAll = ->
-    log 'Categories.getAll'
-    if not Categories.CategoryList
-      Categories.categoryList = new Categories.CategoryCollection
-    return Categories.categoryList

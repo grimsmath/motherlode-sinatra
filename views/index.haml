@@ -6,9 +6,16 @@
     %link{:href => "/assets/application.css", :media => "all", :rel => "stylesheet"}
     %script{:src  => "/assets/application.js"}
   %body
-    .header
+    #header
 
     .wrapper
       #content
 
-    .footer
+    #footer
+
+    #dialogs
+
+    :javascript
+      jQuery(function() {
+        Motherlode.start();
+      });

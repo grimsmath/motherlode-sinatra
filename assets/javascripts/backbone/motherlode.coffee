@@ -1,15 +1,18 @@
-Motherlode = new Backbone.Marionette.Application()
+@Motherlode = do (Backbone, Marionette) ->
 
-Motherlode.addRegions
-  header  : '#header'
-  wrapper : '#wrapper'
-  content : '#content'
-  nav     : '#nav'
-  footer  : '#footer'
+  App = new Marionette.Application()
 
-window.Motherlode = Motherlode
+  App.addRegions
+    regionHeader: '#header'
+    regionContent: '#content'
+    regionFooter: '#footer'
 
-$(document).ready ->
-  log 'document:ready'
-  @logger = new Logger()
-  Motherlode.start()
+  App.addInitializer ->
+    App.module("HeaderApp").start()
+    App.module("UsersApp").start()
+
+  App.on "initialize:after", (options) ->
+    if Backbone.history
+      Backbone.history.start()
+
+  App

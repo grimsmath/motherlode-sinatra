@@ -12,20 +12,21 @@
 //
 //= require vendor/jquery
 //= require vendor/bootstrap
+//=
 //= require vendor/underscore
 //= require vendor/backbone
+//= require vendor/wreqr
 //= require vendor/marionette
 //= require vendor/mongodb
 //=
 //= require utilities/logging
 //=
+//= require_tree ./backbone/config
+//=
 //= require backbone/motherlode
-//= require backbone/motherlode.app
-//= require backbone/users/motherlode.users
-//= require backbone/users/motherlode.userlist
-//= require backbone/categories/motherlode.category
-//= require backbone/categories/motherlode.categorylist
-//= require backbone/nuggets/motherlode.nugget
-//= require backbone/nuggets/motherlode.nuggetlist
+//= require_tree ./backbone/modules/header
+//= require_tree ./backbone/modules/users
+//= require_tree ./backbone/entities
+
 
 

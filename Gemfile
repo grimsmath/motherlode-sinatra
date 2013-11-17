@@ -9,10 +9,10 @@ gem 'mongo'
 gem 'bson_ext'
 gem 'sass'
 gem 'coffee-script'
-gem 'ejs'
 gem 'sprockets'
 gem 'json'
 gem 'bcrypt-ruby'
+gem 'ejs'
 gem 'haml'
 
 group :development do
