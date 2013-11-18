@@ -12,6 +12,7 @@
 //
 //= require vendor/underscore
 //= require vendor/backbone
+//= require vendor/mongodb
 //=
 //= require ./backbone/motherlode
 //=
