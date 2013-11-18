@@ -10,9 +10,13 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require vendor/jquery
-//= require vendor/bootstrap
 //= require vendor/underscore
 //= require vendor/backbone
-//= require vendor/mongodb
-
+//=
+//= require ./backbone/motherlode
+//=
+//= require_tree ./backbone/models
+//= require_tree ./backbone/routers
+//= require_tree ./backbone/templates
+//= require_tree ./backbone/views
+//= require_tree .

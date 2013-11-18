@@ -1254,7 +1254,7 @@
     },
 
     // Bind all defined routes to `Backbone.history`. We have to reverse the
-    // order of the routes here to support behavior where the most workspace
+    // order of the routes here to support behavior where the most main
     // routes can be defined at the bottom of the route map.
     _bindRoutes: function() {
       if (!this.routes) return;

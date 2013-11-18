@@ -613,7 +613,7 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
   }
 
   Collapse.prototype.toggle = function () {
-    this[this.$element.hasClass('in') ? 'hide' : 'list']()
+    this[this.$element.hasClass('in') ? 'hide' : 'show']()
   }
 
 
@@ -716,7 +716,7 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
         $('<div class="dropdown-backdrop"/>').insertAfter($(this)).on('click', clearMenus)
       }
 
-      $parent.trigger(e = $.Event('list.bs.dropdown'))
+      $parent.trigger(e = $.Event('show.bs.dropdown'))
 
       if (e.isDefaultPrevented()) return
 
@@ -865,7 +865,7 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
   }
 
   Modal.prototype.toggle = function (_relatedTarget) {
-    return this[!this.isShown ? 'list' : 'hide'](_relatedTarget)
+    return this[!this.isShown ? 'show' : 'hide'](_relatedTarget)
   }
 
   Modal.prototype.show = function (_relatedTarget) {
@@ -1066,7 +1066,7 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
   })
 
   $(document)
-    .on('list.bs.modal',  '.modal', function () { $(document.body).addClass('modal-open') })
+    .on('show.bs.modal',  '.modal', function () { $(document.body).addClass('modal-open') })
     .on('hidden.bs.modal', '.modal', function () { $(document.body).removeClass('modal-open') })
 
 }(window.jQuery);
@@ -1866,7 +1866,7 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
 
   $(document).on('click.bs.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', function (e) {
     e.preventDefault()
-    $(this).tab('list')
+    $(this).tab('show')
   })
 
 }(window.jQuery);
