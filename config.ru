@@ -12,5 +12,7 @@ map '/assets' do
 end
 
 map '/' do
-  run Sinatra::Application
 end
+
+run Sinatra::Application
+
