@@ -14,6 +14,7 @@
 //= require vendor/bootstrap
 //= require vendor/underscore
 //= require vendor/backbone
+//= require vendor/wreqr
 //= require vendor/marionette
 //= require vendor/mongodb
 //=

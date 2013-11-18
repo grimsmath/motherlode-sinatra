@@ -19,7 +19,9 @@ GEM
       thor (>= 0.13.6)
     haml (4.0.4)
       tilt
-    haml_ejs (0.0.1)
+    haml-coffee (0.1.0)
+      coffee-script
+      execjs
     hike (1.2.3)
     json (1.8.1)
     listen (1.0.3)
@@ -71,7 +73,7 @@ DEPENDENCIES
   ejs
   foreman
   haml
-  haml_ejs
+  haml-coffee
   json
   minitest
   mongo
