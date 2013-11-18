@@ -5,6 +5,7 @@
 # range of content types.
 #
 # Author:: SwampCo (mailto: m@mlw.ac)
+# Revised: David King (mailto: grimsmath@gmail.com)
 # License:: GNU/GPL
 
 require 'sinatra'
@@ -15,8 +16,8 @@ require 'bcrypt'
 configure do
   # MongoClient's from_uri method requires ENV['MONGODB_URI'] to be set
   # You may set in RACK_ENV or using foreman during development
-  ENV['MONGODB_URI']  = 'mongodb://motherlode:password@ds053648.mongolab.com:53648/motherlode'
-  ENV['MONGOLAB_URI'] = ENV['MONGODB_URI']
+  #ENV['MONGODB_URI']  = 'mongodb://motherlode:password@ds053648.mongolab.com:53648/motherlode'
+  #ENV['MONGOLAB_URI'] = ENV['MONGODB_URI']
 
   mongo_client = Mongo::MongoClient.from_uri
 

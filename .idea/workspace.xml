@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53f1b524-6474-4269-86be-1831cf5280f8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="motherlode.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384792430009" ignored="false" />
+    <file path="/Dummy.txt" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384795973760" ignored="false" />
     <file path="/a.rxml" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384006859021" ignored="false" />
     <file path="/a.feature" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384196001175" ignored="false" />
     <file path="/edit.jst.ejs" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384646530556" ignored="false" />
     <file path="/entry.jst.ejs" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384632392387" ignored="false" />
-    <file path="/app.rb" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384795939465" ignored="false" />
+    <file path="/app.rb" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384796305778" ignored="false" />
     <file path="/users_view.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384663539639" ignored="false" />
     <file path="/user.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384705641944" ignored="false" />
     <file path="/list.jst.ejs" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384199504348" ignored="false" />
@@ -107,7 +106,7 @@
       <file leaf-file-name="app.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="19" selection-start="620" selection-end="632" vertical-scroll-proportion="0.28784648">
+            <state line="20" column="0" selection-start="710" selection-end="710" vertical-scroll-proportion="0.42613637">
               <folding />
             </state>
           </provider>
@@ -151,8 +150,8 @@
         <option value="$PROJECT_DIR$/assets/javascripts/backbone/motherlode.js" />
         <option value="$PROJECT_DIR$/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/assets/javascripts/backbone/app.js" />
-        <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app.rb" />
       </list>
     </option>
   </component>
@@ -451,7 +450,11 @@
       <created>1384792432760</created>
       <updated>1384792432760</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="MONGODB_URI changes">
+      <created>1384795977159</created>
+      <updated>1384795977159</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="5">
@@ -487,7 +490,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32103825" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32103825" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -540,7 +543,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rebuilding master branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="MONGODB_URI changes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -561,6 +564,7 @@
     <MESSAGE value="now using marionette" />
     <MESSAGE value="saving" />
     <MESSAGE value="Rebuilding master branch" />
+    <MESSAGE value="MONGODB_URI changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -603,7 +607,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="19" selection-start="620" selection-end="632" vertical-scroll-proportion="0.28784648">
+        <state line="20" column="0" selection-start="710" selection-end="710" vertical-scroll-proportion="0.42613637">
           <folding />
         </state>
       </provider>
