@@ -271,7 +271,6 @@ get '/d/:category_slug/:nugget_id' do
 
 end
 
-
 get '/' do
   erb :index
 end

@@ -12,7 +12,6 @@ map '/assets' do
 end
 
 map '/' do
-  puts "Hello"
-  run Sinatra::Application
 end
 
+run Sinatra::Application
