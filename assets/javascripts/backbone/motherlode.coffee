@@ -1,18 +1,16 @@
-@Motherlode = do (Backbone, Marionette) ->
+class window.Motherlode
+  @Models: {}
+  @Collections: {}
+  @Views: {}
+  @Routers: {}
 
-  App = new Marionette.Application()
+  sanity: -> true
 
-  App.addRegions
-    regionHeader: '#header'
-    regionContent: '#content'
-    regionFooter: '#footer'
+  constructor: ->
+    @Routers.Workspace    = new Motherlode.Routers.Workspace()
+    @Routers.Categories   = new Motherlode.Routers.Categories()
+    @Routers.Nuggets      = new Motherlode.Routers.Nuggets()
+    @Routers.Counties     = new Motherlode.Routers.Counties()
 
-  App.addInitializer ->
-    App.module("HeaderApp").start()
-    App.module("UsersApp").start()
+    Backbone.history.start()
 
-  App.on "initialize:after", (options) ->
-    if Backbone.history
-      Backbone.history.start()
-
-  App

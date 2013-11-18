@@ -2,69 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53f1b524-6474-4269-86be-1831cf5280f8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/entities/categories.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/modules/footer/footer_app.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/modules/header/header_app.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/list_controller.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/list_view.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/entities/nuggets.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/config/marionette/renderer.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/modules/header/show/show_controller.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/modules/header/show/show_view.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/templates/user.jst.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/entities/users.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/templates/users.jst.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/vendor/wreqr.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/categories/motherlode.categorylist.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/motherlode.app.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/nuggets/motherlode.nuggetlist.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/categories/edit.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/categories/entry.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/categories/list.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/categories/show.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/main/welcome.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/nuggets/edit.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/nuggets/entry.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/nuggets/list.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/nuggets/show.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/users/edit.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/users/entry.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/users/list.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/users/login.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/users/password.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/templates/users/show.jst.ejs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/users/motherlode.userlist.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/index.erb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/categories/motherlode.category.coffee" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/modules/categories/categories_app.coffee" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/nuggets/motherlode.nugget.coffee" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/modules/nuggets/nuggets_app.coffee" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/users/motherlode.users.coffee" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/users_app.coffee" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/javascripts/utilities/logging.js.coffee" afterPath="$PROJECT_DIR$/assets/javascripts/utilities/logging.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascripts/templates/header.jst.ejs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/config/marionette/renderer.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/entities/categories.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/entities/nuggets.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/entities/users.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/modules/categories/categories_app.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/modules/footer/footer_app.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/modules/header/header_app.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/modules/header/show/show_controller.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/modules/header/show/show_view.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/modules/nuggets/nuggets_app.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/list_controller.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/list_view.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/templates/user.jst.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/templates/users.jst.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/users_app.coffee" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/assets/javascripts/application_marionette.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/javascripts/utilities/logging.js" afterPath="$PROJECT_DIR$/assets/javascripts/utility/logging.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/javascripts/vendor/backbone.js" afterPath="$PROJECT_DIR$/assets/javascripts/vendor/backbone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/javascripts/vendor/bootstrap.js" afterPath="$PROJECT_DIR$/assets/javascripts/vendor/bootstrap.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.haml" afterPath="$PROJECT_DIR$/views/index.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/javascripts/vendor/jquery.js" afterPath="$PROJECT_DIR$/assets/javascripts/vendor/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/javascripts/vendor/marionette.js" afterPath="$PROJECT_DIR$/assets/javascripts/vendor/marionette.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/javascripts/backbone/motherlode.coffee" afterPath="$PROJECT_DIR$/assets/javascripts/backbone/motherlode.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="motherlode.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384658574079" ignored="false" />
+    <file path="/Dummy.txt" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384665721443" ignored="false" />
     <file path="/a.rxml" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384006859021" ignored="false" />
     <file path="/a.feature" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384196001175" ignored="false" />
     <file path="/edit.jst.ejs" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384646530556" ignored="false" />
     <file path="/entry.jst.ejs" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384632392387" ignored="false" />
     <file path="/app.rb" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384485503888" ignored="false" />
     <file path="/users_view.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384663539639" ignored="false" />
-    <file path="/user.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384224186803" ignored="false" />
+    <file path="/user.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384705641944" ignored="false" />
     <file path="/list.jst.ejs" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384199504348" ignored="false" />
     <file path="/user_router.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384226369546" ignored="false" />
-    <file path="/nugget.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384204913126" ignored="false" />
+    <file path="/nugget.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384705572172" ignored="false" />
     <file path="/motherlode.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384661570322" ignored="false" />
-    <file path="/category.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384204939852" ignored="false" />
+    <file path="/category.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384705551996" ignored="false" />
     <file path="$USER_HOME$/Downloads/rails-backbone-tutorial-master/Gemfile" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384207736313" ignored="false" />
     <file path="/_nav.erb" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384223459106" ignored="false" />
     <file path="/index.erb" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384385781141" ignored="false" />
@@ -80,7 +55,7 @@
     <file path="/motherlode.categorylist.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384640266724" ignored="false" />
     <file path="/motherlode.nugget.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384482665715" ignored="false" />
     <file path="/motherlode.nuggetlist.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384640261760" ignored="false" />
-    <file path="/index.haml" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384659774840" ignored="false" />
+    <file path="/index.haml" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384733041326" ignored="false" />
     <file path="/loggin.js" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384485870959" ignored="false" />
     <file path="/logging.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384486912778" ignored="false" />
     <file path="/motherlode.users.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384640250792" ignored="false" />
@@ -107,13 +82,19 @@
     <file path="/renderer.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384654868639" ignored="false" />
     <file path="/edit_event.jst.hamlc" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384656604637" ignored="false" />
     <file path="/header_app.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384660124001" ignored="false" />
-    <file path="/users_controller.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384665458891" ignored="false" />
+    <file path="/users_controller.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384667049300" ignored="false" />
     <file path="/users_app.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384661116075" ignored="false" />
-    <file path="/users.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384662458600" ignored="false" />
+    <file path="/users.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384703665580" ignored="false" />
     <file path="/categories.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384662011020" ignored="false" />
     <file path="/nuggets.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384661988427" ignored="false" />
-    <file path="/_user.jst.ejs" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384665386810" ignored="false" />
+    <file path="/_user.jst.ejs" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384667577496" ignored="false" />
     <file path="/users.jst.ejs" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384661442250" ignored="false" />
+    <file path="/list_view.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384703088701" ignored="false" />
+    <file path="/list_controller.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384703460417" ignored="false" />
+    <file path="/Motherlode.Views.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384705196649" ignored="false" />
+    <file path="/Motherlode.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384705300486" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/javascripts/backbone/Motherlode.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384705471660" ignored="false" />
+    <file path="/county.coffee" changelist="53f1b524-6474-4269-86be-1831cf5280f8" time="1384705564925" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +113,26 @@
     <favorites_list name="motherlode" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/index.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="41" selection-start="625" selection-end="625" vertical-scroll-proportion="0.3382353">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.jst.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/javascripts/templates/header.jst.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="6" selection-start="771" selection-end="771" vertical-scroll-proportion="-11.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -156,22 +156,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/show/templates/_user.jst.ejs" />
-        <option value="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/show/templates/users.jst.ejs" />
-        <option value="$PROJECT_DIR$/assets/javascripts/backbone/motherlode.coffee" />
-        <option value="$PROJECT_DIR$/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/assets/javascripts/backbone/entities/categories.coffee" />
-        <option value="$PROJECT_DIR$/assets/javascripts/backbone/entities/nuggets.coffee" />
-        <option value="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/show/users_controller.coffee" />
-        <option value="$PROJECT_DIR$/assets/javascripts/backbone/modules/header/show/show_view.coffee" />
-        <option value="$PROJECT_DIR$/assets/javascripts/backbone/entities/users.coffee" />
-        <option value="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/templates/users.jst.ejs" />
-        <option value="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/users_view.coffee" />
         <option value="$PROJECT_DIR$/assets/javascripts/backbone/modules/header/show/show_controller.coffee" />
         <option value="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/users_controller.coffee" />
-        <option value="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/list_view.coffee" />
+        <option value="$PROJECT_DIR$/assets/javascripts/backbone/modules/header/show/templates/header.jst.ejs" />
         <option value="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/templates/user.jst.ejs" />
         <option value="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/list_controller.coffee" />
+        <option value="$PROJECT_DIR$/assets/javascripts/backbone/entities/users.coffee" />
+        <option value="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/list_view.coffee" />
+        <option value="$PROJECT_DIR$/assets/javascripts/backbone/Motherlode.Views.coffee" />
+        <option value="$PROJECT_DIR$/assets/javascripts/backbone/Motherlode.coffee" />
+        <option value="$PROJECT_DIR$/assets/javascripts/backbone/models/user.coffee" />
+        <option value="$PROJECT_DIR$/assets/javascripts/backbone/models/nugget.coffee" />
+        <option value="$PROJECT_DIR$/assets/javascripts/backbone/models/county.coffee" />
+        <option value="$PROJECT_DIR$/assets/javascripts/backbone/models/category.coffee" />
+        <option value="$PROJECT_DIR$/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/assets/javascripts/templates/header.jst.ejs" />
+        <option value="$PROJECT_DIR$/views/index.haml" />
       </list>
     </option>
   </component>
@@ -287,258 +287,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Motherlode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Motherlode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backbone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Motherlode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Motherlode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backbone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Motherlode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Motherlode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backbone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="list" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Motherlode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Motherlode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backbone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="list" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Motherlode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Motherlode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backbone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Motherlode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Motherlode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backbone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="header" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Motherlode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Motherlode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backbone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="header" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="show" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Motherlode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Motherlode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backbone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="header" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="show" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -548,7 +296,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/rails-backbone-tutorial-master" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/sc01-dialogs-master/sc01-dialogs-after" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -559,11 +307,11 @@
       <recent name="$PROJECT_DIR$/assets/javascripts/vendor" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/javascripts" />
+      <recent name="$PROJECT_DIR$/assets/javascripts/utility" />
+      <recent name="$PROJECT_DIR$/assets/javascripts/backbone/extensions" />
       <recent name="$PROJECT_DIR$/assets/javascripts/backbone/config/marionette" />
       <recent name="$PROJECT_DIR$/assets/javascripts/backbone/modules/header/show" />
-      <recent name="$PROJECT_DIR$/assets/javascripts/backbone/modules/welcome/templates" />
-      <recent name="$PROJECT_DIR$/assets/javascripts/backbone/modules" />
-      <recent name="$PROJECT_DIR$/assets/javascripts/backbone/modules/users/templates" />
     </key>
   </component>
   <component name="RunManager" selected="Rack.Local">
@@ -752,7 +500,11 @@
       <created>1384541791603</created>
       <updated>1384541791603</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="now using marionette">
+      <created>1384665725868</created>
+      <updated>1384665725868</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="5">
@@ -779,12 +531,13 @@
     <frame x="0" y="22" width="1440" height="829" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6775956" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32137734" sideWeight="0.6775956" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32137734" sideWeight="0.6775956" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -793,7 +546,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -841,7 +593,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more local vendor javascripts" />
+    <option name="LAST_COMMIT_MESSAGE" value="now using marionette" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -859,6 +611,7 @@
     <MESSAGE value="Trying to figure out users.get" />
     <MESSAGE value="Fixed one collection get issue but not all" />
     <MESSAGE value="added more local vendor javascripts" />
+    <MESSAGE value="now using marionette" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -866,20 +619,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/entities/nuggets.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="236" selection-end="236" vertical-scroll-proportion="0.14914773">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/entities/categories.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="244" selection-end="244" vertical-scroll-proportion="0.14914773">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/javascripts/vendor/mongodb.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="19" selection-start="3" selection-end="19" vertical-scroll-proportion="0.0">
@@ -887,95 +626,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.haml">
+    <entry file="file://$PROJECT_DIR$/assets/javascripts/application_marionette.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="8" selection-start="299" selection-end="299" vertical-scroll-proportion="0.24264705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/entities/users.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="18" selection-start="444" selection-end="444" vertical-scroll-proportion="0.3622159">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/templates/user.jst.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="79" selection-end="79" vertical-scroll-proportion="0.066176474">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/templates/users.jst.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="258" selection-end="258" vertical-scroll-proportion="0.2647059">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="36" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.59659094">
+        <state line="0" column="0" selection-start="0" selection-end="812" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/modules/header/show/show_controller.coffee">
+    <entry file="file://$PROJECT_DIR$/assets/javascripts/utility/date_utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.22026432">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/modules/users/users_app.coffee">
+    <entry file="file://$PROJECT_DIR$/assets/javascripts/utility/dev_utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="229" selection-end="229" vertical-scroll-proportion="0.21306819">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/modules/header/header_app.coffee">
+    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/routers/categories_router.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="41" selection-start="567" selection-end="567" vertical-scroll-proportion="0.46875">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/list_controller.coffee">
+    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/models/user.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="6" selection-start="373" selection-end="373" vertical-scroll-proportion="0.29829547">
+        <state line="0" column="44" selection-start="34" selection-end="44" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/models/nugget.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="11" selection-start="176" selection-end="176" vertical-scroll-proportion="0.10653409">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/models/category.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="11" selection-start="183" selection-end="183" vertical-scroll-proportion="0.10653409">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/motherlode.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="209" selection-end="209" vertical-scroll-proportion="0.19176136">
+        <state line="16" column="0" selection-start="404" selection-end="404" vertical-scroll-proportion="0.3409091">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/modules/users/list/list_view.coffee">
+    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/views/categories_view.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="388" selection-end="388" vertical-scroll-proportion="0.27698863">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/modules/header/show/show_view.coffee">
+    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/extensions/backbone_extensions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="35" selection-start="240" selection-end="240" vertical-scroll-proportion="0.14914773">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="721" selection-end="721" vertical-scroll-proportion="0.38352272">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/javascripts/templates/header.jst.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="6" selection-start="771" selection-end="771" vertical-scroll-proportion="-11.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascripts/backbone/modules/header/show/templates/header.jst.ejs">
+    <entry file="file://$PROJECT_DIR$/views/index.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="554" selection-end="554" vertical-scroll-proportion="0.2647059">
+        <state line="23" column="41" selection-start="625" selection-end="625" vertical-scroll-proportion="0.3382353">
           <folding />
         </state>
       </provider>

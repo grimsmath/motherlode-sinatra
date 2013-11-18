@@ -12,7 +12,21 @@
 //
 //= require vendor/jquery
 //= require vendor/bootstrap
+//=
 //= require vendor/underscore
 //= require vendor/backbone
+//= require vendor/wreqr
+//= require vendor/marionette
 //= require vendor/mongodb
+//=
+//= require utilities/logging
+//=
+//= require_tree ./backbone/config
+//=
+//= require backbone/motherlode
+//= require_tree ./backbone/modules/header
+//= require_tree ./backbone/modules/users
+//= require_tree ./backbone/entities
+
+
 
