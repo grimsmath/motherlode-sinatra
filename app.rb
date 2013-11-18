@@ -16,7 +16,7 @@ require 'bcrypt'
 configure do
   # MongoClient's from_uri method requires ENV['MONGODB_URI'] to be set
   # You may set in RACK_ENV or using foreman during development
-  #ENV['MONGODB_URI']  = 'mongodb://motherlode:password@ds053648.mongolab.com:53648/motherlode'
+  ENV['MONGODB_URI']  = 'mongodb://motherlode:password@ds053648.mongolab.com:53648/motherlode'
   #ENV['MONGOLAB_URI'] = ENV['MONGODB_URI']
 
   mongo_client = Mongo::MongoClient.from_uri
